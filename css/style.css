@@ -9,6 +9,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -172,6 +173,10 @@ nav {
   transition: all 0.3s linear;
   width: 450px;
   height: 60px;
+}
+
+.foundation-box {
+  border: 2px dashed #E9C46A;
 }
 
 /*# sourceMappingURL=style.css.map */
