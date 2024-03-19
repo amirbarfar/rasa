@@ -1,0 +1,66 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 80rem;
+}
+
+@media only screen and (max-width: 1200px)
+{
+
+}
+
+@media only screen and (max-width: 992px)
+{
+    .menu-pc__item
+    {
+        display: none;
+    }
+    .open
+    {
+        visibility: visible;
+    }
+    .header-title
+    {
+        font-size: 30px;
+    }
+    .header-text
+    {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}
+
+@media only screen and (max-width: 576px)
+{
+    .logo-header
+    {
+        width: 70px;
+        height: 60px;
+    }
+
+    .btn-login
+    {
+        width: 120px;
+        height: 40px;
+    }
+
+    .header-title
+    {
+        font-size: 22px;
+    }
+    .header-text
+    {
+        width: 350px;
+    }
+
+    .header-start
+    {
+        width: 300px;
+    }
+}

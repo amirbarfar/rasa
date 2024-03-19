@@ -1,0 +1,19 @@
+@font-face {
+    font-family:bold;
+    src: url(../font/Vazirmatn-font/Vazirmatn-Bold.ttf);
+}
+
+@font-face {
+    font-family:light;
+    src: url(../font/Vazirmatn-font/Vazirmatn-Light.ttf);
+}
+
+@font-face {
+    font-family:medium;
+    src: url(../font/Vazirmatn-font/Vazirmatn-Medium.ttf);
+}
+
+@font-face {
+    font-family:regular;
+    src: url(../font/Vazirmatn-font/Vazirmatn-Regular.ttf);
+}

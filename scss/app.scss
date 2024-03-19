@@ -1,0 +1,202 @@
+// import
+
+@import url(../css/reset.css);
+@import url(../css/respansive.css);
+@import url(../css/font.css);
+
+
+// Varibels
+
+$black :#212121;
+$shili :#DADADA;
+$white : #eee;
+$yellow : #E9C46A;
+$blue : #3498DB;
+
+@mixin btn {
+    border: none;
+    outline: none;
+    background-color: $blue;
+    width: 150px;
+    height: 45px;
+    color: $shili;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s linear;
+}
+
+
+// html
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: medium;
+}
+
+// menu-pc
+
+.bulb-container2 {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 80px auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.menu-pc {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-header {
+    width: 70px;
+    height: 70px;
+}
+
+.menu-pc__item {
+    list-style-type: none;
+}
+
+.menu-pc__link {
+    text-decoration: none;
+    color: $black;
+    font-size: 16px;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 6px;
+    z-index: 5
+}
+
+.btn-login {
+    @include btn;
+}
+
+.btn-login:hover {
+    background-color: $shili;
+    color: $black;
+    cursor: pointer;
+}
+
+.mood {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $shili;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+    transition: all 0.3s linear;
+}
+
+.mood:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.search {
+    @extend .mood;
+}
+
+.open {
+    @extend .mood;
+    visibility: hidden;
+}
+
+// menu-mobile
+
+.container-mobile {
+    position: absolute;
+    background-color: $shili;
+    right: -250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 6
+}
+
+.close {
+    margin: 10px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid $white;
+    padding: 5px 0;
+}
+
+.text-mobile {
+    font-size: 22px;
+    font-family: bold;
+}
+
+.logo-mobile {
+    width: 70px;
+    height: 60px;
+}
+
+.menu-mobile__item {
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.menu-mobile__link {
+    text-decoration: none;
+    color: $black;
+}
+
+//header-center
+
+.header-center
+{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header-text
+{
+    width: 550px;
+    margin: 50px auto;
+    line-height: 25px
+}
+
+.header-start
+{
+    @include btn;
+    @extend .btn-login;
+    width: 450px;
+    height: 60px;
+}
